@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v3.0.6/css/line.css">
+</head>
+<body>
+    <div class="container">
+        <div class="contents">
+            <h1 class="title">파일 전송</h1>
+            <div id="app">
+
+                <input type="radio" name="view" id="waiting">
+                <label for="waiting">
+                    <input id="file" type="file">
+                    <label for="file" class="local">
+                        <div class="icon">
+                            <i class="uil uil-export"></i>
+                        </div>
+                        <div class="guide">파일이나 폴더를 끌어다 놓으세요.</div>
+                    </label>
+                    <div class="cloud">
+                        <div class="icon"><i class="uil uil-cloud"></i></div>
+                        <div class="guide">From Sendy Cloud</div>
+                    </div>
+                </label>
+                <link rel="stylesheet" href="waiting.css">
+
+                <input type="radio" name="view" id="draged">
+                <label for="draged">
+                    파일이나 폴더를 끌어다 놓으세요.
+                </label>
+                <link rel="stylesheet" href="draged.css">
+
+                <input type="radio" name="view" id="droped">
+                <label for="droped">
+                    <div id="file">
+                        <div class="header">
+                            <h4>파일</h4>
+                            <div class="icon"><i class="uil uil-plus"></i></div>
+                        </div>
+                        <div class="section">
+
+                        </div>
+                        <div class="footer">
+                            <div class="total_size">총 4.62 MB</div>
+                            <div class="reset_button">초기화</div>
+                        </div>
+                        <div class="footer"></div>
+                    </div>
+                    <div id="addr">
+                        <div class="header">
+                            <h4>받는 사람</h4>
+                            <div class="icon">
+                                <i class="uil uil-envelope"></i>
+                                <i class="uil uil-slack-alt"></i>
+                            </div>
+                        </div>
+                        <div class="section">
+                            <form action="">
+                                <div class="sender">
+                                    <div class="icon">
+                                        <i class="uil uil-envelope"></i>
+                                    </div>
+                                    <input type="text" placeholder="받는 사람">
+                                </div>
+                                <div class="title">
+                                    <input type="text" placeholder="제목">
+                                </div>
+                                <div class="message">
+                                    <input type="text" placeholder="메세지">
+                                </div>
+                            </form>
+                        </div>
+                        <div class="footer"></div>
+                    </div>
+                    <div class="option">
+                        <div class="header">
+                            <h4>추가 옵션 기능</h4>
+                            <div class="icon"></div>
+                        </div>
+                        <div class="section">
+                            안 만듦
+                        </div>
+                        <div class="footer"></div>
+                    </div>
+                </label>
+                <link rel="stylesheet" href="droped.css">
+
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

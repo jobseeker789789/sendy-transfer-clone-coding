@@ -1,0 +1,19 @@
+#app
+    >label[for='draged']{
+        display: none;
+        justify-content: center;
+        align-items: center;
+        color: #20c997;
+        background-color: #e6fcf5;
+        border: 2px dashed #20c997;
+        font-size: 1.5rem;
+        line-height: 1.5rem;
+        height: inherit;
+        font-weight: 500;
+
+
+    }
+#app
+    >#draged:checked + label[for='draged']{
+        display: flex;
+    }
